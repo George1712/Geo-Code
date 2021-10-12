@@ -121,4 +121,31 @@ scrollUp.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 // 
+
+// Scrolling and add active to Sections ----------------------------------------------
+window.onscroll = function () {
+  let activeLink = document.getElementsByClassName("active-link")
+  if (window.scrollY < 450) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#home']").classList.add("active-link")
+  }if (window.scrollY >= 450) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#about']").classList.add("active-link")
+  }if (window.scrollY >= 2500) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#services']").classList.add("active-link")
+  }if (window.scrollY >= 4700) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#works']").classList.add("active-link")
+  }if (window.scrollY >= 6200) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#team']").classList.add("active-link")
+  }if (window.scrollY >= 8000) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#prices']").classList.add("active-link")
+  }if (window.scrollY >= 9200) {
+    activeLink[0].classList.remove("active-link")
+    document.querySelector(".links li a[href='#contact']").classList.add("active-link")
+  }
+}
 // I Felt In Love With This Programming Lang
