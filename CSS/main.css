@@ -250,6 +250,7 @@ html {
   background-color: transparent;
   text-transform: uppercase;
   font-size: 16px;
+  border-style: solid;
   border-color: #fff;
   border-radius: 50px;
   padding: 15px 30px;
