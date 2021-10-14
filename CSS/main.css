@@ -1726,6 +1726,7 @@ html {
 @keyframes footer-links {
   to {
     transform: translateY(-5px);
+    color: #7ec13f;
   }
 }
 /* Animation */
