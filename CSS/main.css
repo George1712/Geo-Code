@@ -1542,13 +1542,14 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transform: rotate(45deg);
   transition: 0.2s;
+  transform: rotate(45deg);
 }
 .prices .social-media .social-links > div span {
   width: 40px;
   height: 40px;
-  padding: 20px;
+  padding: 17px;
+  border: 3px solid #272727;
   background-color: #272727;
   color: #fff;
   display: flex;
@@ -1560,11 +1561,55 @@ html {
   transition: 0.2s;
 }
 .prices .social-media .social-links > div:hover {
-  transform: rotate(0deg);
+  transform: rotate(0);
 }
 .prices .social-media .social-links > div:hover i {
-  transform: rotate(0deg);
+  transform: rotate(0);
 }
+/* Uncomment To Turn On Animation
+.prices .social-media .social-links > div {
+  animation-name: rotate-div;
+}
+.prices .social-media .social-links > div span i {
+  animation-name: rotate-icon;
+  transition: 0.4s;
+}
+.prices .social-media .social-links > div,
+.prices .social-media .social-links > div span i {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@keyframes rotate-div {
+  25% {
+    transform: rotate(45deg);
+    }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-icon {
+  25% {
+    transform: rotate(-45deg);
+    }
+  50% {
+    transform: rotate(-90deg);
+  }
+  75% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+Uncomment To Turn On Animation */
 /* End Prices  ----------------------------------*/
 /* Start Contact  ----------------------------------*/
 .contact {
